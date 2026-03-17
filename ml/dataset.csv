@@ -1,0 +1,10 @@
+speed,altitude,distance,direction,object
+2500,9000,40,approaching,missile
+2400,8500,60,approaching,missile
+2200,10000,80,approaching,missile
+1800,12000,200,approaching,fighter_jet
+1700,11000,250,approaching,fighter_jet
+1600,10000,300,approaching,fighter_jet
+200,500,100,hovering,drone
+150,300,120,hovering,drone
+180,400,80,hovering,drone
