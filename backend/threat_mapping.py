@@ -41,9 +41,38 @@ def get_threat_info(object_type, confidence, data):
         "CRITICAL": "Deploy countermeasures immediately"
     }
 
-    action = action_map[threat]
+    action = decide_action(object_type, threat, speed, distance)
 
     return {
         "threat": threat,
         "action": action
     }
+
+def decide_action(object_type, threat, speed, distance):
+
+    if object_type == "missile":
+        if threat == "CRITICAL":
+            return "Deploy flares and perform evasive maneuvers"
+        elif threat == "HIGH":
+            return "Prepare countermeasures and change trajectory immediately"
+        else:
+            return "Monitor the situation closely and be ready to take action"
+    elif object_type == "fighter_jet":
+        if threat == "CRITICAL":
+            if distance < 30:
+                return "Immediate evasive maneuvers and prepare for close combat"
+            else:
+                return "Engage defensive systems and prepare for potential missile launch"
+        elif threat == "HIGH":
+            return "Increase distance and prepare for evasive maneuvers"
+        else:
+            return "Monitor the situation and maintain readiness"
+    elif object_type == "drone":
+        if threat == "CRITICAL":
+            return "Attempt signal jamming or deploy counter-drone measures immediately"
+        elif threat == "HIGH":
+            return "Activate counter-drone measures and maintain vigilance"
+        else:
+            return "Monitor the situation and be prepared to respond"
+    else:
+        return "Unknown object type, maintain general vigilance and monitor the situation"
