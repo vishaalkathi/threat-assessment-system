@@ -1,0 +1,35 @@
+[BEHAVIOR] Missiles travel at extremely high speeds and often follow a direct or descending trajectory toward a target.
+[BEHAVIOR] Ballistic missiles may ascend rapidly and later descend at high velocity during terminal approach.
+[BEHAVIOR] Cruise missiles typically maintain controlled flight at relatively low altitude and high speed.
+[BEHAVIOR] Fighter jets operate at high speeds with stable and controlled flight paths.
+[BEHAVIOR] Fighter jets may change altitude quickly during combat maneuvers but still show controlled motion.
+[BEHAVIOR] Drones usually move at lower speeds and lower altitudes than fighter aircraft.
+[BEHAVIOR] Drones may hover, loiter, or move slowly over an area for surveillance.
+[BEHAVIOR] Civilian aircraft generally follow stable routes, steady altitude bands, and predictable speeds.
+[BEHAVIOR] Debris usually follows an uncontrolled falling path and does not maintain a stable powered trajectory.
+[BEHAVIOR] Space or airborne debris may tumble, drift, or descend irregularly without directional control.
+[BEHAVIOR] Unknown aerial objects with erratic movement require further observation before classification.
+
+[THREAT] High-speed objects approaching a protected area indicate elevated threat.
+[THREAT] Extreme speed combined with controlled descent is strongly consistent with missile-like threat behavior.
+[THREAT] Close-range objects significantly increase urgency because reaction time is reduced.
+[THREAT] Objects moving directly toward a target zone are more threatening than objects moving away.
+[THREAT] Low-altitude fast-moving threats are difficult to detect and may increase tactical danger.
+[THREAT] Hovering or loitering drones near sensitive areas may indicate surveillance or attack preparation.
+[THREAT] Controlled high-speed flight is generally more threatening than irregular uncontrolled descent.
+[THREAT] Uncontrolled falling objects may indicate debris rather than an intentional hostile threat.
+[THREAT] Low-confidence classification should reduce certainty of threat conclusions.
+[THREAT] Conflicting indicators such as low speed but aggressive trajectory should trigger caution and re-evaluation.
+[THREAT] Multiple hostile indicators together increase the likelihood of a serious threat.
+[THREAT] Unknown objects near defended zones should be treated cautiously until identified.
+
+[ACTION] Missile threats require immediate defensive response and possible countermeasure deployment.
+[ACTION] High-threat approaching objects should be tracked continuously and prioritized for interception.
+[ACTION] Fighter aircraft near defended airspace should be monitored and assessed for intent.
+[ACTION] Suspected drones near sensitive facilities should trigger surveillance and localized counter-drone response.
+[ACTION] Low-threat objects should remain under observation rather than immediate engagement.
+[ACTION] Possible debris should be tracked until an estimated impact zone is determined.
+[ACTION] Unknown objects with uncertain threat should be reclassified as more data becomes available.
+[ACTION] Low-confidence predictions should be verified using additional sensor inputs or repeated observation.
+[ACTION] If an object is moving away from the protected zone, monitoring may be preferred over immediate response.
+[ACTION] High-priority threats should be surfaced first to reduce response delay in multi-object situations.
