@@ -20,6 +20,10 @@ def get_threat_info(object_type, confidence, data):
     elif speed < 500:
         threat_level -= 1
     
+    if data["direction"] == "leaving":
+        if threat_level >= 2:
+            threat_level -= 1
+    
     if confidence < 0.6:
         threat_level -= 1
     
