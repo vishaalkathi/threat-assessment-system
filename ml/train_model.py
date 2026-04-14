@@ -13,7 +13,7 @@ df['direction'] = df['direction'].map({
 })
 
 X = df[['speed','altitude','distance','direction']]
-y = df['object']
+y = df['object_type']
 
 # train model
 model = RandomForestClassifier()

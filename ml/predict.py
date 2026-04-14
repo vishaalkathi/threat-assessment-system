@@ -5,7 +5,11 @@ import pandas as pd
 with open("ml/model.pkl", "rb") as f:
     model = pickle.load(f)
 
-def predict_object(speed, altitude, distance, direction):
+def predict_object(data):
+    speed = data["speed"]
+    altitude = data["altitude"]
+    distance = data["distance"]
+    direction = data["direction"]
 
     # convert direction text to number
     direction_map = {
@@ -30,4 +34,4 @@ def predict_object(speed, altitude, distance, direction):
     # confidence between 0 and 1
     confidence = max(model.predict_proba(data)[0])
 
-    return object_type, confidence
+    return {"object_type": object_type, "confidence": confidence}
